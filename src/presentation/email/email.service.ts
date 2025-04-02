@@ -38,20 +38,8 @@ export class EmailService {
 
       //console.log(sentInformation);
 
-      const log = new LogEntity({
-        message: "Email send",
-        level: LogSeverityLevel.low,
-        origin: "email.service.ts",
-      });
-
       return true;
     } catch (error) {
-      const log = new LogEntity({
-        message: "Email not send",
-        level: LogSeverityLevel.high,
-        origin: "email.service.ts",
-      });
-
       return false;
     }
   }
