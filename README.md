@@ -14,8 +14,25 @@ MAILER_EMAIL=
 MAILER_SECRET_KEY=
 PROD=false
 
+MONGO_URL=
+MONGO_DB_NAME=
+MONGO_USER=
+MONGO_PASS=
+
+
+POSTGRES_URL=
+POSTGRES_DB=
+POSTGRES_USER=
+POSTGRES_PASSWORD=
+
 ```
 
 3. Ejecutar el comando `npm install`
 
-4. Ejecutar `npm run dev`
+4. Levantar las bases de datos con el comando
+
+```
+docker compose up -d
+```
+
+5. Ejecutar `npm run dev`
